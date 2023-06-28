@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import json
 
-link_firebase_db = 'tokem_firebase'
+link_firebase_db = 'https://fastok-db-default-rtdb.firebaseio.com/'
 
 def consultar_db(local):
     req_get = requests.get(f'{link_firebase_db}/{local}/.json')
